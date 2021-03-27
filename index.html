@@ -13,7 +13,7 @@
     <h1 id="btn">CLOSED</h1>
 
 
-
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
         var btn = document.getElementById("btn");
         btn.onclick = function () {
@@ -25,6 +25,11 @@
                 btn.innerHTML = "OPEN"
             }
         }
+        VanillaTilt.init(document.querySelector("#btn"), {
+    max: 25,
+    speed: 400,
+
+}); 
     </script>
 </body>
 
